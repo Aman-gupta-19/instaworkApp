@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <h1>Add a team member</h1>
+        <p>Set email, location and role.</p>
+
+        <h3>Info</h3>
+        <form action = {% url 'AddPage'  %} method="post">
+            {% csrf_token %}
+            <div>
+                <input type="text" placeholder="First Name" name="fname">
+            </div>
+            <div>
+                <input type="text" placeholder="Last Name" name="lname">
+            </div>
+            <div>
+                <input type="number" placeholder="Phone Number" name="pno">
+            </div>
+            <div>
+                <input type="email" placeholder="Email" name="email">
+            </div>
+            <div>
+                <div class="role">Role</div>
+                <label>Regular - can't delete members</label>
+                <input type="radio" placeholder="Role" name="role" value="0"><br>
+                <label>Admin - can delete members</label>
+                <input type="radio" placeholder="Role" name="role" value="1">
+            </div><br>
+            <input type="button" value="Back" onclick="location.href='/myApp/ListPage'">
+            <input type="submit" value="Save">
+        </form>
+    </body>
+</html>

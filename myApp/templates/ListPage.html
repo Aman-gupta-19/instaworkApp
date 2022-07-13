@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <h1>Team Members</h1>
+        <div>
+            You have {{ count }} team members
+            <a href="{% url 'AddPage' %}"><img src="{% static 'myApp/images/add.png' %}" width="50px" height="30px" class="addimg" ></a>
+            <br>
+            <br>
+        </div>
+        {% for i in team_list %}
+            <div class="addline" onclick="location.href='/myApp/EditPage/?id='+'{{i.id}}';">
+                <div>
+                    <img src="{% static 'myApp/images/profile.png' %}" width="50px" height="30px" class="memberspace">
+                    {{ i.fname }} {{ i.lname }} {% if i.role == 1 %} (Admin) {% endif %}
+                </div>
+                <div class="addspace">{{ i.pno }}</div>
+                <div class="addspace">{{ i.email }}</div>
+            </div>
+        {% endfor %}
+    </body>
+</html>

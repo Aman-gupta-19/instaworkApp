@@ -1,0 +1,27 @@
+body {
+    background-color: lightblue;
+  }
+
+.addimg{
+  margin-left: 60px;
+}
+
+.addline{
+  border-top: 3px solid;
+  margin-bottom: 20px;
+}
+
+.addspace{
+  margin-left: 55px;
+}
+
+.memberspace{
+  margin-top: 10px;
+}
+
+.role{
+  font-size: large;
+  font-weight: bolder;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
