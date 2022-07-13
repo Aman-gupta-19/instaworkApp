@@ -16,9 +16,12 @@ Installation:
 
 
 Getting Started:
-    -	In this application user will be able to see all the added members in the list page(main page), we can access this using url “localhost:myApp/ListPage”.
+    -	In this application user will be able to see all the added members in the list page(main page), 
+    we can access this using url “localhost:myApp/ListPage”.
 
-    -	We have two more pages in addition to this, add page and edit page. Clicking the “+” sign on list page would take you to the add page or you can use url “localhost:myApp/AddPage” to directly access this page and to access edit page we have to click on any of the member listed on main page and it will take you to the edit page or else you can use “localhost:myApp/EditPage/?id=’some_id’” to directly access this page.
+    -	We have two more pages in addition to this, add page and edit page. 
+    Clicking the “+” sign on list page would take you to the add page or you can use url “localhost:myApp/AddPage” to directly access this page 
+    and to access edit page we have to click on any of the member listed on main page and it will take you to the edit page or else you can use “localhost:myApp/EditPage/?id=’some_id’” to directly access this page.
 
 
     -	With add page you can add a new member with his information and role and with edit page we can edit the existing member with the updated information/role and save it or else delete that particular record as well from this page.
